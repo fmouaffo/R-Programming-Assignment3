@@ -53,10 +53,10 @@ be sorted in alphabetical order and the first hospital in that set should be cho
 and “f” are tied for best, then hospital “b” should be returned).
 The function should use the following template.
 best <- function(state, outcome) {
-## Read outcome data
-## Check that state and outcome are valid
-## Return hospital name in that state with lowest 30-day death
-## rate
+- Read outcome data
+- Check that state and outcome are valid
+- Return hospital name in that state with lowest 30-day death
+- rate
 }
 The function should check the validity of its arguments. If an invalid state value is passed to best, the
 function should throw an error via the stop function with the exact message “invalid state”. If an invalid
@@ -107,10 +107,10 @@ scheme and Detar is ranked number 4. One can use the order function to sort mult
 manner (i.e. where one vector is used to break ties in another vector).
 The function should use the following template.
 rankhospital <- function(state, outcome, num = "best") {
-## Read outcome data
-## Check that state and outcome are valid
-## Return hospital name in that state with the given rank
-## 30-day death rate
+- Read outcome data
+- Check that state and outcome are valid
+- Return hospital name in that state with the given rank
+- 30-day death rate
 }
 The function should check the validity of its arguments. If an invalid state value is passed to rankhospital,
 the function should throw an error via the stop function with the exact message “invalid state”. If an invalid
@@ -139,11 +139,11 @@ Handling ties. The rankall function should handle ties in the 30-day mortality r
 that the rankhospital function handles ties.
 The function should use the following template.
 rankall <- function(outcome, num = "best") {
-## Read outcome data
-## Check that state and outcome are valid
-## For each state, find the hospital of the given rank
-## Return a data frame with the hospital names and the
-## (abbreviated) state name
+- Read outcome data
+- Check that state and outcome are valid
+- For each state, find the hospital of the given rank
+- Return a data frame with the hospital names and the
+- (abbreviated) state name
 }
 NOTE: For the purpose of this part of the assignment (and for efficiency), your function should NOT call
 the rankhospital function from the previous section.
